@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luck Game</title>
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="./CSS/responsive.css" />
+  </head>
+  <body>
+    <div class="container text-center">
+      <h2 class="winner"></h2>
+      <h1>Let's play a Luck Game</h1>
+
+      <p class="lucky-number">Winning Score: <span>0</span></p>
+      <h3>
+        Player-1 : <span class="p1">0</span>
+        <span class="vs">Vs.</span> Player-2:
+        <span class="p2">0</span>
+      </h3>
+      <h4>The Guessed Number: <span class="guess-result"></span></h4>
+      <div class="input">
+        <form>
+          <input
+            type="text"
+            id="luck-input"
+            placeholder="Set a winning score"
+          />
+          <div class="input-order mt-3">
+            <input type="submit" value="Submit" class="submit" />
+            <input type="button" value="Reset" id="resetBtn" />
+          </div>
+        </form>
+      </div>
+      <div class="player-btn">
+        <button class="p1Btn">Player 1</button>
+        <button class="p2Btn">Player 2</button>
+      </div>
+    </div>
+    <script src="./JS/bootstrap.min.js"></script>
+    <script src="./JS/app.js"></script>
+  </body>
+</html>
